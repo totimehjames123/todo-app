@@ -10,12 +10,12 @@ function App() {
 
   const handleAddTodo = () => {
     if (todoText.trim() !== '') {
-      if (todoText.length <= 30){
+      if (todoText.length <= 120){
         dispatch(addTodo({ id: Date.now(), text: todoText }));
         setTodoText('');
       }
       else{
-        alert('Text length should be less or equal to 30!')
+        alert('Text length should be less or equal to 50!')
       }
 
     } else {
