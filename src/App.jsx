@@ -10,7 +10,7 @@ function App() {
 
   const handleAddTodo = () => {
     if (todoText.trim() !== '') {
-      if (todoText.length <= 20){
+      if (todoText.length <= 30){
         dispatch(addTodo({ id: Date.now(), text: todoText }));
         setTodoText('');
       }
@@ -41,7 +41,7 @@ function App() {
       <h1 style={{textAlign: 'center'}}>Redux Todo App</h1>
       
       <div className="input-container">
-        <input max={20} type="text" className="todo-input" placeholder="Add a todo ..." value={todoText} onChange={(e) => setTodoText(e.target.value)} />
+        <input type="text" className="todo-input" placeholder="Add a todo ..." value={todoText} onChange={(e) => setTodoText(e.target.value)} />
         <button className="add-button" onClick={handleAddTodo}>Add Todo</button>
       </div>
       {todos.map((todo) => (

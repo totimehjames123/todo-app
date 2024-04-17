@@ -56,6 +56,11 @@ body {
   border-radius: 4px;
   background-color: #f8f9fa;
 }
+.text-width{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+}
 
 .todo-item span {
   flex: 1;
@@ -103,9 +108,5 @@ body {
   .input-container button {
     width: 30%;
   }
-  .text-width{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap; 
-  }
+  
 }
