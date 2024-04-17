@@ -15,7 +15,7 @@ function App() {
         setTodoText('');
       }
       else{
-        alert('Text length should be less or equal to 50!')
+        alert('Text length should be less or equal to 120!')
       }
 
     } else {
