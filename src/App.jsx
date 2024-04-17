@@ -46,7 +46,7 @@ function App() {
       </div>
       {todos.map((todo) => (
         <div className="todo-item" key={todo.id}>
-          <span>{todo.text}</span>
+          <span className='text-width' onDoubleClick={() => alert(todo.text)}>{todo.text}</span>
           <button className="delete-button" onClick={() => handleRemoveTodo(todo)}>Delete</button>
           <button className="update-button" onClick={() => handleUpdateTodo(todo)}>Update</button>
     </div>

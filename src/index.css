@@ -103,4 +103,9 @@ body {
   .input-container button {
     width: 30%;
   }
+  .text-width{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+  }
 }
